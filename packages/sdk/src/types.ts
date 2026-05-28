@@ -23,6 +23,7 @@ export type DevDebuggerErrorPayload = {
   stack?: string;
   errorSource?: string;
   line?: number;
+  column?: number;
 };
 
 export type DevDebuggerListenerCallback = (
