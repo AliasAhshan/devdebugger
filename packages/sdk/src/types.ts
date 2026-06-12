@@ -9,10 +9,10 @@ export type DevDebuggerConfig = {
 };
 
 export type DevDebuggerEventType =
-  | 'window_error'
-  | 'console_error'
-  | 'react_error'
-  | 'unhandled_rejection';
+  | "window_error"
+  | "console_error"
+  | "react_error"
+  | "unhandled_rejection";
 
 export type DevDebuggerErrorPayload = {
   type: DevDebuggerEventType;
