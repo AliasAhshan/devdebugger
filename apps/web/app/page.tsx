@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { initDevDebugger } from "devdebugger";
+import { initDevDebugger, destroyDevDebugger } from "devdebugger";
 
 export default function Home() {
   useEffect(() => {
@@ -34,6 +34,7 @@ export default function Home() {
       >
         Trigger Runtime Error
       </button>
+      <button onClick={() => destroyDevDebugger()}>Destroy DevDebugger</button>
     </main>
   );
 }
